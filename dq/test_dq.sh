@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-cd ~/scripts/nexus_etl
+cd ~/scripts/modular_etl_dq
 
 # Historical DQ window:
 # >= 2024-11-01 06:00:00

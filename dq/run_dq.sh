@@ -6,10 +6,10 @@
 set -Eeuo pipefail
 
 # ======================== EDIT CONFIGURATION HERE ========================
-PROJECT_DIR="/home/allanf/scripts/nexus_etl"  # Root with helpers/ and existing .env
+PROJECT_DIR="~/scripts/modular_etl_dq"  # Root with helpers/ and existing .env
 ENV_FILE="$PROJECT_DIR/.env"              # Existing DB/SMTP secrets; do NOT copy them here
-PYTHON_BIN="python3"                      # Set to your working venv Python path if applicable
-ETL_LAUNCHER="/CHANGE/TO/YOUR/WORKING_ETL_LAUNCHER.sh" # Existing synchronous ETL launcher; REQUIRED for daily cron
+PYTHON_BIN="~/scripts/.venv/bin/python"                      # Set to your working venv Python path if applicable
+ETL_LAUNCHER="$PROJECT_DIR/dq/run_daily_dqrun.sh" # Existing synchronous ETL launcher; REQUIRED for daily cron
 DQ_BRAND="inplayv1"                      # Brand passed to DQ
 DQ_ENTITY="gameTransaction"              # Entity passed to DQ
 DQ_CHUNK_SIZE="10000"                    # Previously tested batch size

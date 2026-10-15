@@ -5,7 +5,7 @@ set -euo pipefail
 # CONFIG - CHANGE THESE ONLY
 # =============================================================================
 
-PROJECT_DIR="/home/allanf/scripts/nexus_etl"
+PROJECT_DIR="/home/allanf/scripts/modular_etl_dq"
 
 BRAND="inplayv1"
 

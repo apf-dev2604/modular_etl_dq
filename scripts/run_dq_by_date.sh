@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PROJECT_DIR="/home/allanf/scripts/nexus_etl"
+PROJECT_DIR="/home/allanf/scripts/modular_etl_dq"
 BRAND="inplayv1"
 ENTITY="gameTransaction"
 START_DATE="2024-11-03"
