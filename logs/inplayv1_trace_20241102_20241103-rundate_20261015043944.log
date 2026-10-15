@@ -1,0 +1,27 @@
+2026-10-15 04:39:44,230 [INFO] [DATE WINDOW][timezone-unaware] source_from_inclusive=2024-11-02 06:00:00 source_to_exclusive=2024-11-03 06:00:00
+2026-10-15 04:39:44,230 [INFO] [RESOURCE MODE] batch_size=10000 commit_every=1000 insert_page_size=100
+2026-10-15 04:39:44,383 [INFO] [FACT PREFLIGHT] target game table=public.gameTransaction_prod columns=37
+2026-10-15 04:39:44,383 [INFO] [FACT PREFLIGHT] target wallet table=public.walletTransaction_prod columns=15
+2026-10-15 04:39:44,383 [INFO] OK for Data Import | target table readiness passed
+2026-10-15 04:39:44,390 [INFO] 
+[EXTRACTION SQL][inplayv1 game] first_select_for_psql:
+2026-10-15 04:39:44,390 [INFO]   SELECT id, data
+2026-10-15 04:39:44,391 [INFO]           FROM public."GameTransactionInplayV1"
+2026-10-15 04:39:44,391 [INFO]           WHERE data IS NOT NULL AND game_dt >= '2024-11-02 06:00:00'::timestamp AND game_dt < '2024-11-03 06:00:00'::timestamp
+2026-10-15 04:39:44,391 [INFO]           ORDER BY game_dt ASC, id ASC
+2026-10-15 04:39:44,391 [INFO]           LIMIT 10000
+2026-10-15 04:39:44,391 [INFO] 
+2026-10-15 04:39:45,867 [INFO] 
+[IMPORT SQL][inplayv1 gameTransaction] insert_upsert_template:
+2026-10-15 04:39:45,867 [INFO]   INSERT INTO public.gameTransaction_prod (
+2026-10-15 04:39:45,867 [INFO]           startDateTime, playerUserName, tableRoomId, sideBetAmount, betAmount, validBet, payoutAmount, PC1, PC2, PC3, PC4, PC5, JW1, JW2, JW3, JW4, JW5, progressionContributionPaid, seedMoneyWon, seedMoneyJackpotOver1000, endDateTime, externalId, parlay, betDetails, betTiming, brand, platform, roundId
+2026-10-15 04:39:45,867 [INFO]       ) VALUES %s
+2026-10-15 04:39:45,868 [INFO]       ON CONFLICT (externalId) DO NOTHING
+2026-10-15 04:39:45,868 [INFO]       RETURNING externalId
+2026-10-15 04:39:45,868 [INFO] 
+2026-10-15 04:40:05,922 [INFO] OK for Data Import | phase=gameTransaction source_rows=10000 transformed=10000 attempted=10000 inserted=0 target_present_for_batch_keys=500
+2026-10-15 04:40:05,922 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 04:40:23,767 [INFO] OK for Data Import | phase=gameTransaction source_rows=10000 transformed=10000 attempted=10000 inserted=0 target_present_for_batch_keys=500
+2026-10-15 04:40:23,767 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 04:40:41,470 [INFO] OK for Data Import | phase=gameTransaction source_rows=10000 transformed=10000 attempted=10000 inserted=0 target_present_for_batch_keys=500
+2026-10-15 04:40:41,470 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none

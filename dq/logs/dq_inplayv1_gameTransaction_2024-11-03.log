@@ -1,0 +1,83 @@
+[DQ NUMERIC TOTAL TOLERANCE] 0.01
+[DQ ROW AMOUNT TOLERANCE] 0.65
+[DQ CURRENT QUERY] ensure DQ tables schema=db_admin
+[DQ CURRENT QUERY] source game summary brand=inplayv1 window=2024-11-03 06:00:00 -> 2024-11-04 06:00:00
+[DQ CURRENT QUERY] target game summary brand=inplayv1 window=2024-11-03 06:00:00 -> 2024-11-04 06:00:00
+[DQ CURRENT QUERY] source game chunk scan chunk_size=10000 window=2024-11-03 06:00:00 -> 2024-11-04 06:00:00
+[DQ CURRENT QUERY] target game lookup chunk=1 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=2 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=3 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=4 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=5 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=6 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=7 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=8 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=9 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=10 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=11 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=12 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=13 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=14 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=15 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=16 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=17 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=18 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=19 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=20 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=21 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=22 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=23 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=24 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=25 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=26 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=27 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=28 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=29 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=30 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=31 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=32 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=33 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=34 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=35 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=36 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=37 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=38 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=39 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=40 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=41 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=42 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=43 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=44 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=45 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=46 external_ids=4788
+[DQ RECON SUMMARY]
+status: PASS
+trust_result: READY_FOR_REPORTING
+checked_source_rows_for_hash: 454788
+brand: inplayv1
+duration_minutes: 1.131
+duration_seconds: 67.874
+entity: game_transaction
+extra_in_target: 0
+hash_mismatch_rows: 0
+missing_in_target: 0
+notes: All configured DQ checks passed for this window.
+run_id: dqrecon_inplayv1_game_2024-11-03 00:00:00+00:00_2024-11-04 00:00:00+00:00_20261015052632
+source_distinct_keys: 454788
+source_duplicate_keys: 0
+source_rows: 454788
+source_total_bet: 22549907.980000
+source_total_jackpot_contribution: 0.000000
+source_total_payout: 21462346.772500
+source_total_valid_bet: 22549907.980000
+status: PASS
+target_distinct_keys: 454788
+target_duplicate_keys: 0
+target_rows: 454788
+target_total_bet: 22549907.9800
+target_total_jackpot_contribution: 0.0000
+target_total_payout: 21462346.7725
+target_total_valid_bet: 22549907.9800
+trust_result: READY_FOR_REPORTING
+window_from: 2024-11-03 06:00:00
+window_to: 2024-11-04 06:00:00

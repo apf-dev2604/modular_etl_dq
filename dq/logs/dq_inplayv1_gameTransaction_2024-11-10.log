@@ -1,0 +1,220 @@
+[DQ NUMERIC TOTAL TOLERANCE] 0.01
+[DQ ROW AMOUNT TOLERANCE] 0.65
+[DQ CURRENT QUERY] ensure DQ tables schema=db_admin
+[DQ CURRENT QUERY] source game summary brand=inplayv1 window=2024-11-10 06:00:00 -> 2024-11-11 06:00:00
+[DQ CURRENT QUERY] target game summary brand=inplayv1 window=2024-11-10 06:00:00 -> 2024-11-11 06:00:00
+[DQ CURRENT QUERY] source game chunk scan chunk_size=10000 window=2024-11-10 06:00:00 -> 2024-11-11 06:00:00
+[DQ CURRENT QUERY] target game lookup chunk=1 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=2 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=3 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=4 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=5 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=6 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=7 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=8 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=9 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=10 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=11 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=12 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=13 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=14 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=15 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=16 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=17 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=18 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=19 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=20 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=21 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=22 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=23 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=24 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=25 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=26 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=27 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=28 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=29 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=30 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=31 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=32 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=33 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=34 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=35 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=36 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=37 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=38 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=39 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=40 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=41 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=42 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=43 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=44 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=45 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=46 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=47 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=48 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=49 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=50 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=51 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=52 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=53 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=54 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=55 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=56 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=57 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=58 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=59 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=60 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=61 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=62 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=63 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=64 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=65 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=66 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=67 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=68 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=69 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=70 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=71 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=72 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=73 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=74 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=75 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=76 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=77 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=78 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=79 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=80 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=81 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=82 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=83 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=84 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=85 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=86 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=87 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=88 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=89 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=90 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=91 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=92 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=93 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=94 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=95 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=96 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=97 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=98 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=99 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=100 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=101 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=102 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=103 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=104 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=105 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=106 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=107 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=108 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=109 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=110 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=111 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=112 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=113 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=114 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=115 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=116 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=117 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=118 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=119 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=120 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=121 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=122 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=123 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=124 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=125 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=126 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=127 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=128 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=129 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=130 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=131 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=132 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=133 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=134 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=135 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=136 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=137 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=138 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=139 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=140 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=141 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=142 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=143 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=144 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=145 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=146 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=147 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=148 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=149 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=150 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=151 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=152 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=153 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=154 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=155 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=156 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=157 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=158 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=159 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=160 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=161 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=162 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=163 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=164 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=165 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=166 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=167 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=168 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=169 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=170 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=171 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=172 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=173 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=174 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=175 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=176 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=177 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=178 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=179 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=180 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=181 external_ids=10000
+[DQ CURRENT QUERY] target game lookup chunk=182 external_ids=6627
+[DQ CURRENT QUERY] write DQ mismatch details count=34
+[DQ RECON SUMMARY]
+status: PASS_WITH_ROUNDING_NOTE
+trust_result: READY_FOR_REPORTING_WITH_NOTE
+checked_source_rows_for_hash: 1816627
+brand: inplayv1
+duration_minutes: 6.464
+duration_seconds: 387.815
+entity: game_transaction
+extra_in_target: 0
+hash_mismatch_rows: 0
+missing_in_target: 0
+notes: rounding_only_hash_rows=34 row_amount_tolerance=0.65; total_bet_rounding_note source=71585282.645467 target=71585282.6454 diff=0.000067 tolerance=0.01; total_valid_bet_rounding_note source=71585282.645467 target=71585282.6454 diff=0.000067 tolerance=0.01; rounding_external_ids=[TPG-FunMonkey-202411101533137643-3715271, TPG-FunMonkey-202411101533174769-3715271, TPG-FunMonkey-202411101533210391-3715271, TPG-FunMonkey-202411101533228330-3715271, TPG-FunMonkey-202411101533246018-3715271, TPG-FunMonkey-202411101533264283-3715271, TPG-FunMonkey-202411101533282159-3715271, TPG-FunMonkey-202411101533300774-3715271, TPG-FunMonkey-202411101533318849-3715271, TPG-FunMonkey-202411101533337393-3715271, TPG-FunMonkey-202411101533355442-3715271, TPG-FunMonkey-202411101533373505-3715271, TPG-FunMonkey-202411101533391077-3715271, TPG-FunMonkey-202411101533409611-3715271, TPG-FunMonkey-202411101533427226-3715271, TPG-FunMonkey-202411101533445463-3715271, TPG-FunMonkey-202411101533463701-3715271, TPG-FunMonkey-202411101533481867-3715271, TPG-FunMonkey-202411101533500164-3715271, TPG-FunMonkey-202411101533517910-3715271, TPG-FunMonkey-202411101533536125-3715271, TPG-FunMonkey-202411101533554210-3715271, TPG-FunMonkey-202411101533571914-3715271, TPG-FunMonkey-202411101533589772-3715271, TPG-FunMonkey-202411101534007394-3715271, TPG-FunMonkey-202411101534025444-3715271, TPG-TPG777-202411101734092807-14461690, TPG-TPG777-202411101734122204-14461690, TPG-TPG777-202411101734151012-14461690, TPG-TPG777-202411101734178208-14461690, TPG-TPG777-202411101734206411-14461690, TPG-TPG777-202411101734234205-14461690, TPG-TPG777-202411111252488107-14473631, TPG-TPG777-202411111252542743-14473631]
+run_id: dqrecon_inplayv1_game_2024-11-10 00:00:00+00:00_2024-11-11 00:00:00+00:00_20261015060110
+source_distinct_keys: 1816627
+source_duplicate_keys: 0
+source_rows: 1816627
+source_total_bet: 71585282.645467
+source_total_jackpot_contribution: 0.000000
+source_total_payout: 69332674.520800
+source_total_valid_bet: 71585282.645467
+status: PASS_WITH_ROUNDING_NOTE
+target_distinct_keys: 1816627
+target_duplicate_keys: 0
+target_rows: 1816627
+target_total_bet: 71585282.6454
+target_total_jackpot_contribution: 0.0000
+target_total_payout: 69332674.5208
+target_total_valid_bet: 71585282.6454
+trust_result: READY_FOR_REPORTING_WITH_NOTE
+window_from: 2024-11-10 06:00:00
+window_to: 2024-11-11 06:00:00

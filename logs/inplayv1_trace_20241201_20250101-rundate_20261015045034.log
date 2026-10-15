@@ -1,0 +1,97 @@
+2026-10-15 04:50:34,296 [INFO] [DATE WINDOW][timezone-unaware] source_from_inclusive=2024-12-01 06:00:00 source_to_exclusive=2025-01-01 06:00:00
+2026-10-15 04:50:34,296 [INFO] [RESOURCE MODE] batch_size=100000 commit_every=10000 insert_page_size=100
+2026-10-15 04:50:34,527 [INFO] [FACT PREFLIGHT] target game table=public.gameTransaction_prod columns=37
+2026-10-15 04:50:34,527 [INFO] [FACT PREFLIGHT] target wallet table=public.walletTransaction_prod columns=15
+2026-10-15 04:50:34,527 [INFO] OK for Data Import | target table readiness passed
+2026-10-15 04:50:34,539 [INFO] 
+[EXTRACTION SQL][inplayv1 game] first_select_for_psql:
+2026-10-15 04:50:34,539 [INFO]   SELECT id, data
+2026-10-15 04:50:34,539 [INFO]           FROM public."GameTransactionInplayV1"
+2026-10-15 04:50:34,539 [INFO]           WHERE data IS NOT NULL AND game_dt >= '2024-12-01 06:00:00'::timestamp AND game_dt < '2025-01-01 06:00:00'::timestamp
+2026-10-15 04:50:34,539 [INFO]           ORDER BY game_dt ASC, id ASC
+2026-10-15 04:50:34,539 [INFO]           LIMIT 100000
+2026-10-15 04:50:34,540 [INFO] 
+2026-10-15 04:51:05,557 [INFO] 
+[IMPORT SQL][inplayv1 gameTransaction] insert_upsert_template:
+2026-10-15 04:51:05,558 [INFO]   INSERT INTO public.gameTransaction_prod (
+2026-10-15 04:51:05,558 [INFO]           startDateTime, playerUserName, tableRoomId, sideBetAmount, betAmount, validBet, payoutAmount, PC1, PC2, PC3, PC4, PC5, JW1, JW2, JW3, JW4, JW5, progressionContributionPaid, seedMoneyWon, seedMoneyJackpotOver1000, endDateTime, externalId, parlay, betDetails, betTiming, brand, platform, roundId
+2026-10-15 04:51:05,558 [INFO]       ) VALUES %s
+2026-10-15 04:51:05,558 [INFO]       ON CONFLICT (externalId) DO NOTHING
+2026-10-15 04:51:05,558 [INFO]       RETURNING externalId
+2026-10-15 04:51:05,558 [INFO] 
+2026-10-15 04:53:20,154 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 04:53:20,155 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 04:55:03,716 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 04:55:03,716 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 04:56:48,893 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 04:56:48,894 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:00:57,734 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:00:57,735 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:02:52,007 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:02:52,007 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:04:26,963 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:04:26,963 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:05:56,536 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:05:56,537 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:07:22,387 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:07:22,388 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:08:54,781 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:08:54,782 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:10:27,289 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:10:27,289 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:11:56,008 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:11:56,008 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:13:27,864 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:13:27,864 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:14:53,597 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:14:53,597 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:16:14,504 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:16:14,505 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:17:53,789 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:17:53,790 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:19:16,178 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:19:16,178 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:20:34,456 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:20:34,457 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:22:01,589 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:22:01,589 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:23:26,645 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:23:26,645 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:24:49,814 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:24:49,814 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:26:08,974 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:26:08,974 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:28:10,909 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:28:10,909 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:31:53,186 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:31:53,187 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:33:57,166 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:33:57,166 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:38:07,089 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:38:07,089 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:40:06,100 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:40:06,100 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:43:51,439 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:43:51,439 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:46:15,457 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:46:15,457 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:48:17,948 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:48:17,948 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:50:35,828 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:50:35,828 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:52:31,990 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:52:31,990 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:54:39,054 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:54:39,054 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 05:58:28,951 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 05:58:28,951 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=3 varianceColumns=6 columns=betAmount,validBet
+2026-10-15 06:00:39,555 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 06:00:39,555 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 06:04:53,203 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 06:04:53,203 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 06:07:03,091 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 06:07:03,091 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
+2026-10-15 06:11:13,237 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 06:11:13,237 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=1 varianceColumns=1 columns=payoutAmount
+2026-10-15 06:13:19,519 [INFO] OK for Data Import | phase=gameTransaction source_rows=100000 transformed=100000 attempted=100000 inserted=100000 target_present_for_batch_keys=500
+2026-10-15 06:13:19,519 [INFO] [COLUMN DQ][gameTransaction] checkedRows=500 varianceRows=0 varianceColumns=0 columns=none
